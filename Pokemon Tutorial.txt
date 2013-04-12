@@ -1,0 +1,63 @@
+Pokemon Entry Tutorial
+
+There are 6 classes you will need: Pokemon.as, PokemonHolder.as, Move.as, and MoveHolder.as, Type.as, and Ability.as.
+
+Step 1 – Copy and Paste
+1.	Copy the last Pokemon entry in the PokemonHolder class, beginning from case statement to the break statement.
+2.	Paste it below, leaving a space between the entry you just pasted and the last entry.
+
+Step 2 – Base Attributes
+1.	Replace “case Pokemon.NAME” with “case Pokemon.” and then the name of your Pokemon, all caps.
+2.	Go to http://bulbapedia.bulbagarden.net/wiki/Main_Page and search for your Pokemon.
+3.	Fill in all of the relative information for your Pokemon.
+4.	Height is in meters, weight is in kg.
+6.	Enter the typing of your Pokemon.  If a Pokemon has only one type, enter “Type.NONE” for the secondary type.
+7.	Enter the base stats and EV yield.  They go in the order [hp, attack, defense, special attack, special defense, speed].
+8.	For genderRatio, the number is the percentage of your Pokemon that is male in decimal form.
+9.	For xpRate, look in the Pokemon class for the XP constants and the comments that say which are which.
+
+Step 3 – Evolutions
+1.	Check to see if your Pokemon evolves at all.  If not, use these two lines:
+
+	pokemon.evolveLevel = 0;
+	pokemon.evolveTypes.push(Pokemon.EVOLUTION_NONE);
+
+2.	If your Pokemon evolves by level, set evolveLevel to that level and push the appropriate evolution constant.
+3.	If your Pokemon evolves by item or stone, also include the line:
+
+	pokemon.evolveItems.push(Item.FIRE_STONE);
+
+	where “FIRE_STONE” is the item your Pokemon must be holding or exposed to.
+4.	For all other cases, use the appropriate evolution constant.
+5.	If a Pokemon evolves into multiple Pokemon, then you will need to repeat the code for each evolution.
+
+Step 4 – Moves
+1.	Find the list of your Pokemon's moves.  Begin with the moves they learn via level up.
+2.	For each move, use the line:
+
+	pokemon.movepool.push(MoveHolder.getMove(4, Move.TAIL_WHIP));
+
+	where the first parameter of MoveHolder.getMove() is the level they learn the move, and the second parameter
+	is the constant of the move that is being learned.
+3.	If the move is learned at "Start", instead of a level, write Move.LEARN_START for MoveHolder.getMove()'s
+	first parameter.
+4.	If the move's constant doesn't exist in the Move class:
+		1. Open Move.as and find the list of move constants.
+		2. Go to the end of the list, hit enter twice, and add the line:
+
+		public static const YOUR_MOVE_CONSTANT:int = 0;
+
+		where "YOUR_MOVE_CONSTANT" is the name of your move in all caps and underscores for spaces.
+		Keep the int set to 0.  Eventually, you'll compile a separate list of move constants that will all
+		be worked back into the actual class.
+5.	Do this for each level-up move.
+6.	Repeat for all moves a Pokemon learns via TM, using the line:
+
+	pokemon.movepool.push(MoveHolder.getMove(Move.LEARN_TM, Move.TAIL_WHIP));
+
+7.	If your Pokemon is the first of its evolutions, repeat for all moves learned via breeding with this line:
+
+	pokemon.movepool.push(MoveHolder.getMove(Move.LEARN_EGG, Move.TAIL_WHIP));
+
+	You don't have to do this for Pokemon that have evolved.
+
