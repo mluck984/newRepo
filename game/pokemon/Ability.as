@@ -1,0 +1,181 @@
+package game.pokemon
+{
+	/**
+	 * ...
+	 * @author Matthew
+	 */
+	public class Ability 
+	{
+		public static const ADAPTABILITY:int = 0;
+		public static const AFTERMATH:int = 1;
+		public static const AIR_LOCK:int = 2;
+		public static const ANALYTIC:int = 3;
+		public static const ANGER_POINT:int = 4;
+		public static const ANTICIPATION:int = 5;
+		public static const ARENA_TRAP:int = 6;
+		public static const BAD_DREAMS:int = 7;
+		public static const BATTLE_ARMOR:int = 8;
+		public static const BIG_PECKS:int = 9;
+		public static const BLAZE:int = 10;
+		public static const CACOPHONY:int = 11;
+		public static const CHLOROPHYLL:int = 12;
+		public static const CLEAR_BODY:int = 13;
+		public static const CLOUD_NINE:int = 14;
+		public static const COLOR_CHANGE:int = 15;
+		public static const COMPOUNDEYES:int = 16;
+		public static const CONTRARY:int = 17;
+		public static const CURSED_BODY:int = 18;
+		public static const CUTE_CHARM:int = 19;
+		public static const DAMP:int = 20;
+		public static const DEFEATIST:int = 21;
+		public static const DEFIANT:int = 22;
+		public static const DOWNLOAD:int = 23;
+		public static const DRIZZLE:int = 24;
+		public static const DROUGHT:int = 25;
+		public static const DRY_SKIN:int = 26;
+		public static const EARLY_BIRD:int = 27;
+		public static const EFFECT_SPORE:int = 28;
+		public static const FILTER:int = 29;
+		public static const FLAME_BODY:int = 30;
+		public static const FLARE_BOOST:int = 31;
+		public static const FLASH_FIRE:int = 32;
+		public static const FLOWER_GIFT:int = 33;
+		public static const FORECAST:int = 34;
+		public static const FOREWARN:int = 35;
+		public static const FRIEND_GUARD:int = 36;
+		public static const FRISK:int = 37;
+		public static const GLUTTONY:int = 38;
+		public static const GUTS:int = 39;
+		public static const HARVEST:int = 40;
+		public static const HEALER:int = 41;
+		public static const HEATPROOF:int = 42;
+		public static const HEAVY_METAL:int = 43;
+		public static const HONEY_GATHER:int = 44;
+		public static const HUGE_POWER:int = 45;
+		public static const HUSTLE:int = 46;
+		public static const HYDRATION:int = 47;
+		public static const HYPER_CUTTER:int = 48;
+		public static const ICE_BODY:int = 49;
+		public static const ILLUMINATE:int = 50;
+		public static const ILLUSION:int = 51;
+		public static const IMMUNITY:int = 52;
+		public static const IMPOSTER:int = 53;
+		public static const INFILTRATOR:int = 54;
+		public static const INNER_FOCUS:int = 55;
+		public static const INSOMNIA:int = 56;
+		public static const INTIMIDATE:int = 57;
+		public static const IRON_BARBS:int = 58;
+		public static const IRON_FIST:int = 59;
+		public static const JUSTIFIED:int = 60;
+		public static const KEEN_EYE:int = 61;
+		public static const KLUTZ:int = 62;
+		public static const LEAF_GUARD:int = 63;
+		public static const LEVITATE:int = 64;
+		public static const LIGHT_METAL:int = 65;
+		public static const LIGHTNINGROD:int = 66;
+		public static const LIMBER:int = 67;
+		public static const LIQUID_OOZE:int = 68;
+		public static const MAGIC_BOUNCE:int = 69;
+		public static const MAGIC_GUARD:int = 70;
+		public static const MAGMA_ARMOR:int = 71;
+		public static const MAGNET_PULL:int = 72;
+		public static const MARVEL_SCALE:int = 73;
+		public static const MINUS:int = 74;
+		public static const MOLD_BREAKER:int = 75;
+		public static const MOODY:int = 76;
+		public static const MOTOR_DRIVE:int = 77;
+		public static const MOXIE:int = 78;
+		public static const MULTISCALE:int = 79;
+		public static const MULTITYPE:int = 80;
+		public static const MUMMY:int = 81;
+		public static const NATURAL_CURE:int = 82;
+		public static const NO_GUARD:int = 83;
+		public static const NORMALIZE:int = 84;
+		public static const OBLIVIOUS:int = 85;
+		public static const OVERCOAT:int = 86;
+		public static const OVERGROW:int = 87;
+		public static const OWN_TEMPO:int = 88;
+		public static const PICKPOCKET:int = 89;
+		public static const PICKUP:int = 90;
+		public static const PLUS:int = 91;
+		public static const POISON_HEAL:int = 92;
+		public static const POISON_POINT:int = 93;
+		public static const POISON_TOUCH:int = 94;
+		public static const PRANKSTER:int = 95;
+		public static const PRESSURE:int = 96;
+		public static const PURE_POWER:int = 97;
+		public static const QUICK_FEET:int = 98;
+		public static const RAIN_DISH:int = 99;
+		public static const RATTLED:int = 100;
+		public static const RECKLESS:int = 101;
+		public static const REGENERATOR:int = 102;
+		public static const RIVALRY:int = 103;
+		public static const ROCK_HEAD:int = 104;
+		public static const ROUGH_SKIN:int = 105;
+		public static const RUN_AWAY:int = 106;
+		public static const SAND_FORCE:int = 107;
+		public static const SAND_RUSH:int = 108;
+		public static const SAND_STREAM:int = 109;
+		public static const SAND_VEIL:int = 110;
+		public static const SAP_SIPPER:int = 111;
+		public static const SCRAPPY:int = 112;
+		public static const SERENE_GRACE:int = 113;
+		public static const SHADOW_TAG:int = 114;
+		public static const SHED_SKIN:int = 115;
+		public static const SHEER_FORCE:int = 116;
+		public static const SHELL_ARMOR:int = 117;
+		public static const SHIELD_DUST:int = 118;
+		public static const SIMPLE:int = 119;
+		public static const SKILL_LINK:int = 120;
+		public static const SLOW_START:int = 121;
+		public static const SNIPER:int = 122;
+		public static const SNOW_CLOAK:int = 123;
+		public static const SOLAR_POWER:int = 124;
+		public static const SOLID_ROCK:int = 125;
+		public static const SOUNDPROOF:int = 126;
+		public static const SPEED_BOOST:int = 127;
+		public static const STALL:int = 128;
+		public static const STATIC:int = 129;
+		public static const STEADFAST:int = 130;
+		public static const STENCH:int = 131;
+		public static const STICKY_HOLD:int = 132;
+		public static const STORM_DRAIN:int = 133;
+		public static const STURDY:int = 134;
+		public static const SUCTION_CUPS:int = 135;
+		public static const SUPER_LUCK:int = 136;
+		public static const SWARM:int = 137;
+		public static const SWIFT_SWIM:int = 138;
+		public static const SYNCHRONIZE:int = 139;
+		public static const TANGLED_FEET:int = 140;
+		public static const TECHNICIAN:int = 141;
+		public static const TELEPATHY:int = 142;
+		public static const TERAVOLT:int = 143;
+		public static const THICK_FAT:int = 144;
+		public static const TINTED_LENS:int = 145;
+		public static const TORRENT:int = 146;
+		public static const TOXIC_BOOST:int = 147;
+		public static const TRACE:int = 148;
+		public static const TRUANT:int = 149;
+		public static const TURBOBLAZE:int = 150;
+		public static const UNAWARE:int = 151;
+		public static const UNBURDEN:int = 152;
+		public static const UNNERVE:int = 153;
+		public static const VICTORY_STAR:int = 154;
+		public static const VITAL_SPIRIT:int = 155;
+		public static const VOLT_ABSORB:int = 156;
+		public static const WATER_ABSORB:int = 157;
+		public static const WATER_VEIL:int = 158;
+		public static const WEAK_ARMOR:int = 159;
+		public static const WHITE_SMOKE:int = 160;
+		public static const WONDER_GUARD:int = 161;
+		public static const WONDER_SKIN:int = 162;
+		public static const ZEN_MODE:int = 163;
+		
+		public function Ability() 
+		{
+			
+		}
+		
+	}
+
+}
