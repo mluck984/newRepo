@@ -82,9 +82,9 @@ package game.pokemon
 		public static const GLOOM:int = 40;
 		public static const VILEPLUME:int = 41;
 		public static const BELLOSSOM:int = 42;
-		public static const HOOTOOT:int = 43;
-		public static const NOCTOWL:int = 44;
-		public static const SANDSHREW:int = 45;
+		public static const HOOTOOT:int = 43; //
+		public static const NOCTOWL:int = 44; //
+		public static const SANDSHREW:int = 45; //
 		public static const SANDSLASH:int = 46;
 		public static const MANKEY:int = 47;
 		public static const PRIMEAPE:int = 48;

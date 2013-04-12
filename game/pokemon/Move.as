@@ -166,9 +166,39 @@ package game.pokemon
 		public static const SEISMIC_TOSS:int = 130;
 		public static const SLEEP_TALK:int = 131;
 		public static const YAWN:int = 132;
+		public static const FORESIGHT:int = 0;
+		public static const PECK:int = 0;
+		public static const UPROAR:int = 0;
+		public static const REFLECT:int = 0;
+		public static const CONFUSION:int = 0;
+		public static const AIR_SLASH:int = 0;
+		public static const ZEN_HEADBUTT:int = 0;
+		public static const SYNCHRONOISE:int = 0;
+		public static const PSYCHO_SHIFT:int = 0;
+		public static const ROOST:int = 0;
+		public static const PSYCHIC:int = 0;
+		public static const SHADOW_BALL:int = 0;
+		public static const FLY:int = 0;
+		public static const AGILITY:int = 0;
+		public static const DEFOG:int = 0;
+		public static const FEATHERDANCE:int = 0;
+		public static const MIRROR_MOVE:int = 0;
+		public static const NIGHT_SHADE:int = 0;
+		public static const SKY_ATTACK:int = 0;
+		public static const SUPERSONIC:int = 0;
+		public static const WHIRLWIND:int = 0;
+		public static const WING_ATTACK:int = 0;
+		public static const SAND_ATTACK:int = 0;
+		public static const POISON_STING:int = 0;
+		public static const SWIFT:int = 0;
+		public static const FURY_CUTTER:int = 0;
+		public static const SAND_TOMB:int = 0;
+		public static const XSCISSOR:int = 0;
+		public static const CRUSH_CLAW:int = 0;
+		public static const MUD_SHOT:int = 0;
+		public static const ROCK_CLIMB:int = 0;
 		
-		
-		
+
 		private var _moveID:int;
 		private var _type:int;
 		private var _category:int;
